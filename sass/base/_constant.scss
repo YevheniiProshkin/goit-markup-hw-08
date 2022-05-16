@@ -1,0 +1,26 @@
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowarp;
+  clip-path: insert(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: 0;
+  visibility: hidden;
+}

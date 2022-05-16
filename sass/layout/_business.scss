@@ -1,0 +1,45 @@
+.business {
+  padding-bottom: 94px;
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.buisness__container {
+  margin-top: 50px;
+}
+
+.business__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--all-title-color);
+}
+
+.business__list {
+  display: flex;
+}
+
+.business__item {
+  position: relative;
+}
+
+.business__item-title {
+  position: absolute;
+  background: rgba(47, 48, 58, 0.8);
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  padding-top: 27px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}

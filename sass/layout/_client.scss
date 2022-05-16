@@ -1,0 +1,47 @@
+.client {
+  padding: 94px 0;
+}
+
+.client__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 50px;
+}
+
+.client__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.client__link {
+  display: block;
+  height: 92px;
+  width: 170px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition: var(--timing-color-fon-shadow);
+}
+
+.client__logo {
+  margin: 16px 32px;
+  fill: #afb1b8;
+  transition: var(--timing-color-fon-shadow);
+}
+
+.client {
+  &__link:hover,
+  &__link:focus {
+    fill: #2196f3;
+    border: 1px solid #2196f3;
+  }
+
+  &__link:hover &__logo,
+  &__link:focus &__logo {
+    fill: #2196f3;
+  }
+}
