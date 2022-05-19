@@ -624,11 +624,12 @@ img {
 }
 
 .footer__containers {
-  display: flex;
+  text-align: center;
 }
 
 .footer__container-first {
-  width: 231px;
+  margin-top: 20px;
+  margin-bottom: 60px;
 }
 
 .footer__link-main {
@@ -640,6 +641,10 @@ img {
   color: var(--footer-link-mail-color);
 }
 
+.footer__address {
+  margin-top: 20px;
+}
+
 .footer__link-main-studio {
   font-family: "Raleway";
   font-weight: 700;
@@ -647,10 +652,6 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #ffffff;
-}
-
-.footer__address {
-  margin-top: 20px;
 }
 
 .footer__link-map {
@@ -693,8 +694,7 @@ img {
 }
 
 .footer__container-second {
-  margin-left: 70px;
-  padding-top: 12px;
+  margin-bottom: 60px;
 }
 
 .footer__text {
@@ -730,17 +730,8 @@ img {
   transition: background-color var(--timing-color-fon-shadow);
 }
 
-.footer__container-third {
-  margin-left: 93px;
-  padding-top: 12px;
-}
-
-.footer__form {
-  display: flex;
-}
-
 .footer__mail {
-  width: 358px;
+  width: 100%;
   height: 50px;
   padding-left: 16px;
   margin-right: 12px;
@@ -749,6 +740,7 @@ img {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
+  margin-bottom: 20px;
 }
 
 .footer__mail:placeholder {
@@ -760,7 +752,6 @@ img {
 }
 
 .footer__btn {
-  width: 200px;
   height: 50px;
   background-color: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -774,6 +765,7 @@ img {
   justify-content: center;
   text-align: center;
   letter-spacing: 0.06em;
+  margin: 0 auto;
   color: #ffffff;
 }
 
