@@ -6,20 +6,25 @@
 
 .footer__containers {
   // display: flex;
-  // flex-direction: column;
   text-align: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .footer__container-tablet {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     justify-content: space-between;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: inline-flex;
   }
 }
 
 .footer__container-first {
   // display: flex;
-  // flex-direction: column;
   @media screen and (max-width: 767px) {
     margin-top: 20px;
     margin-bottom: 60px;
@@ -28,6 +33,10 @@
   @media screen and (min-width: 768px) {
     margin-left: 76px;
     margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 231px;
+    margin: 0;
   }
 }
 
@@ -52,11 +61,6 @@
   letter-spacing: 0.03em;
   color: #ffffff;
 }
-
-// .footer__address {
-//   margin-top: 20px;
-//   margin-bottom: 60px;
-// }
 
 .footer__link-map {
   font-style: normal;
@@ -108,6 +112,13 @@
     margin-right: 89px;
     margin-top: 5px;
   }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+    padding-top: 12px;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
 }
 
 .footer__text {
@@ -143,14 +154,18 @@
   transition: background-color var(--timing-color-fon-shadow);
 }
 
-// .footer__container-third {
-//   margin-left: 93px;
-//   padding-top: 12px;
-// }
+.footer__container-third {
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+    padding-top: 12px;
+  }
+}
 
-// .footer__form {
-//   display: flex;
-// }
+.footer__form {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
 
 .footer__mail {
   // width: 358px;
@@ -167,6 +182,12 @@
 
   @media screen and (min-width: 768px) {
     width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
   }
 }
 
@@ -199,6 +220,11 @@
   margin: 0 auto;
 
   color: #ffffff;
+
+  @media screen and (min-width: 1200px) {
+    padding: 0;
+    width: 200px;
+  }
 }
 
 .footer__logo-send {
