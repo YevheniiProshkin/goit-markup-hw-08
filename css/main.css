@@ -119,10 +119,12 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
-.header .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@media screen and (min-width: 768px) {
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .header__logo {
@@ -133,6 +135,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--header-link-main-color);
   display: block;
+  padding: 16px 0;
 }
 
 .header__logo-color {
@@ -146,7 +149,11 @@ img {
 
 .header__navigation {
   display: flex;
-  margin-left: 93px;
+}
+@media screen and (max-width: 767px) {
+  .header__navigation {
+    display: none;
+  }
 }
 
 .header__navigation-link {
@@ -163,7 +170,22 @@ img {
 
 .header__contact {
   display: flex;
-  margin-left: auto;
+}
+@media screen and (max-width: 767px) {
+  .header__contact {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__contact {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__contact {
+    flex-direction: row;
+  }
 }
 
 .header__contact-svg-mail,
@@ -182,8 +204,12 @@ img {
   color: #757575;
   display: flex;
   align-items: center;
-  justify-content: center;
   transition: color var(--timing-color-fon-shadow);
+}
+@media screen and (max-width: 1199px) {
+  .header__contact-link-mail {
+    padding-bottom: 10px;
+  }
 }
 
 .header__contact-link-tel {
@@ -194,7 +220,6 @@ img {
   color: #757575;
   display: flex;
   align-items: center;
-  justify-content: center;
   transition: color var(--timing-color-fon-shadow);
 }
 
@@ -204,8 +229,10 @@ img {
 .header__navigation-link:hover, .header__navigation-link:focus {
   color: #2196f3;
 }
-.header__contact-item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 1200px) {
+  .header__contact-item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 .header__contact-link-mail:hover, .header__contact-link-mail:focus {
   color: #2196f3;
