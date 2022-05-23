@@ -24,11 +24,16 @@
   <body>
     <!--ШАПКА-HEADER-->
 
-    <!-- <header class="header">
+    <header class="header">
       <div class="container">
         <a class="header__logo link" href="" lang="en"
           >Web<span class="header__logo-color">Studio</span></a
         >
+        <button type="button" class="header__button-menu-open">
+          <svg class="header__button-menu__svg" width="40" height="40">
+            <use href="./img/symbol-defs.svg#icon-menu_40px"></use>
+          </svg>
+        </button>
         <nav class="navigation">
           <ul class="header__navigation list">
             <li class="header__navigation-item">
@@ -63,7 +68,59 @@
           </li>
         </ul>
       </div>
-    </header> -->
+      <div class="menu-mobile">
+        <div class="container">
+          <button type="button" class="menu-mobile__button-close">
+            <svg class="menu-mobile__button-close-svg" width="40" height="40">
+              <use href="./img/symbol-defs.svg#icon-close_40px"></use>
+            </svg>
+          </button>
+          <ul class="menu-mobile__navigation list">
+            <li class="menu-mobile__navigation-item">
+              <a class="menu-mobile__navigation-link link" href="./index.html"
+                >Студия</a
+              >
+            </li>
+            <li class="menu-mobile__navigation-item">
+              <a class="menu-mobile__navigation-link link menu-current" href=""
+                >Портфолио</a
+              >
+            </li>
+            <li class="menu-mobile__navigation-item">
+              <a class="menu-mobile__navigation-link link" href="">Контакты</a>
+            </li>
+          </ul>
+          <div class="menu-mobile__container-flex">
+            <ul class="menu-mobile__contact list">
+              <li class="menu-mobile__contact-item">
+                <a class="menu-mobile__contact-link-tel link" href=""
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="menu-mobile__contact-item">
+                <a class="menu-mobile__contact-link-mail link" href=""
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="menu-mobile__soc list">
+              <li class="menu-mobile__soc-item">
+                <a class="menu-mobile__soc-link link" href="">Instagram</a>
+              </li>
+              <li class="menu-mobile__soc-item">
+                <a class="menu-mobile__soc-link link" href="">Twitter</a>
+              </li>
+              <li class="menu-mobile__soc-item">
+                <a class="menu-mobile__soc-link link" href="">Facebook</a>
+              </li>
+              <li class="menu-mobile__soc-item">
+                <a class="menu-mobile__soc-link link" href="">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
 
     <!--ПОРТФОЛИО-PORTFOLIO-->
 
@@ -353,5 +410,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

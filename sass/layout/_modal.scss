@@ -39,6 +39,12 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+  }
 }
 
 .modal__title {
@@ -138,7 +144,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color var(--timing-color-fon-shadow);
+  transition: var(--timing-color-fon-shadow);
 }
 
 .modal__icon-vector {
@@ -165,9 +171,9 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: transparent;
-  // display: flex;
-  // align-items: center;
-  // text-align: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
   // letter-spacing: 0.06em;
 
   color: #ffffff;
