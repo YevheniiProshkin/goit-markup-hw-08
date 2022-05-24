@@ -173,7 +173,6 @@
   background-color: #ffffff;
   width: 100vw;
   height: 100vh;
-  transition: var(--timing-color-fon-shadow);
 
   .container {
     display: flex;
@@ -183,6 +182,7 @@
     padding-top: 10px;
     padding-bottom: 48px;
     padding-left: 40px;
+    overflow-y: auto;
   }
 
   @media screen and (min-width: 768px) {
@@ -286,4 +286,8 @@
 
 .menu-current {
   color: #2196f3;
+}
+
+.no-scroll {
+  overflow: hidden;
 }

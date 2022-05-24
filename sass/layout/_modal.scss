@@ -28,8 +28,11 @@
 
 .modal {
   position: absolute;
-  width: 528px;
-  height: 581px;
+  // width: 528px;
+  // height: 581px;
+  width: 100%;
+  max-width: 450px;
+  height: auto;
   top: 50%;
   left: 50%;
   padding: 40px;
@@ -40,10 +43,9 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 1200px) {
     width: 100%;
-    max-width: 450px;
-    height: auto;
+    max-width: 528px;
   }
 }
 
