@@ -67,13 +67,13 @@
   }
 
   @media screen and (min-width: 768px) {
-    max-width: 768px;
+    // max-width: 768px;
     margin-left: auto;
     margin-right: auto;
   }
 
   @media screen and (min-width: 1200px) {
-    max-width: 1200px;
+    // max-width: 1200px;
     padding-top: 200px;
     padding-bottom: 200px;
   }
@@ -93,7 +93,7 @@
   max-width: 360px;
   margin-right: auto;
   margin-left: auto;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 
   @media screen and (min-width: 1200px) {
     max-width: 696px;

@@ -131,6 +131,12 @@ img {
     align-items: center;
   }
 }
+@media screen and (min-width: 1200px) {
+  .header .container {
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
 
 .header__logo {
   font-family: "Raleway";
@@ -158,6 +164,11 @@ img {
 @media screen and (max-width: 767px) {
   .header__navigation {
     display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__navigation {
+    margin-left: 93px;
   }
 }
 
@@ -190,6 +201,7 @@ img {
 @media screen and (min-width: 1200px) {
   .header__contact {
     flex-direction: row;
+    margin-left: auto;
   }
 }
 
@@ -435,14 +447,12 @@ img {
 }
 @media screen and (min-width: 768px) {
   .service {
-    max-width: 768px;
     margin-left: auto;
     margin-right: auto;
   }
 }
 @media screen and (min-width: 1200px) {
   .service {
-    max-width: 1200px;
     padding-top: 200px;
     padding-bottom: 200px;
   }
@@ -459,7 +469,7 @@ img {
   max-width: 360px;
   margin-right: auto;
   margin-left: auto;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
   .service__title {
@@ -829,6 +839,7 @@ img {
 @media screen and (min-width: 1200px) {
   .footer__containers {
     display: flex;
+    text-align: start;
   }
 }
 
@@ -941,6 +952,7 @@ img {
     padding-top: 12px;
     margin-right: 0;
     margin-bottom: 0;
+    margin-top: 0;
   }
 }
 
@@ -1073,18 +1085,24 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .portfolio__button-container {
   margin-bottom: 40px;
 }
 @media screen and (min-width: 768px) {
   .portfolio__button-container {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .portfolio__button-container {
-    margin-bottom: 35px;
+    margin-bottom: 50px;
   }
 }
 
@@ -1332,8 +1350,8 @@ img {
 
 .modal__check-text {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.7;
   letter-spacing: 0.03em;
   color: #757575;
   display: flex;
