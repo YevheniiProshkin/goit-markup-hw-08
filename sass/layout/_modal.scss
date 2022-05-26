@@ -135,6 +135,10 @@
 
   display: flex;
   align-items: center;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
 }
 
 .modal__check-text span {
